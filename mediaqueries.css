@@ -101,6 +101,12 @@
     font-size: 2rem;
   }
   .text-container {
-    text-align: justify;
+    text-align: center;
   }
 }
+
+@media screen and (max-width: 400px){
+  .text-container {
+    text-align: center;
+  }  
+} 
