@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Muong KimHeng</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="mobile-nav">
+    <div class="logo">Muong KimHeng</div>
+    <div class="mobile-menu">
+      <div class="mobile-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#languages" onclick="toggleMenu()">Languages</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="section_pic-container">
+      <img src="./assets/profile-pic.jpeg" alt="MuongKimHeng's profile picture" />
+    </div>
+    <div class="section_text">
+      <p class="section_text_p1">Hello, I'm</p>
+      <h1 class="title">Muong KimHeng</h1>
+      <p class="section_text_p2">Software Development</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Muong KimHeng CV.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/kimheng-muong/'">
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/MuongKimHeng'">
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>IT STEP ACADEMY CAMBODIA</h3>
+            <p>2024 - Present</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Beltie Internation Institute</h3>
+            <p>GRADUATED 2021</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>AUSTRALIA EDUCATION CENTRE</h3>
+            <p>GEP 12</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            A Software Development Student who's building a strong foundation in programming, problem-solving, and web
+            technologies.
+            I love turning logical challenges into clean, functional code and am constantly exploring new tools
+            and languages to expand my technical skillset. Eager to grow, collaborate, and take on hands-on
+            opportunities
+            where I can contribute to meaningful projects and learn from experienced developers.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#languages'" />
+  </section>
+
+  <section id="languages">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Languages</h1>
+    <div class="languages-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="languages-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="languages icon" class="icon" />
+              <div>
+                <h3>HTML&CSS</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="languages icon" class="icon" />
+              <div>
+                <h3>C#</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="languages icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="languages icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="languages icon" class="icon" />
+              <div>
+                <h3>Figma</h3>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="languages icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="languages-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="languages icon" class="icon" />
+              <div>
+                <h3>Microsoft SQL</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="languages icon" class="icon" />
+              <div>
+                <h3>ASP.NET using C#</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="languages icon" class="icon" />
+              <div>
+                <h3>Django using Python</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">HTML/CSS's Project</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MuongKimHeng/HTML-CSS-EXAM-.git'">
+              Github
+            </button>
+
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">JavaScript's Project</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MuongKimHeng/Librarian_Book_Track.git'">
+              Github
+            </button>
+
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Django WebApp's Project</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:kimhengmuongtuesday@gmail.com">Kimhengmuongtuesday@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/phone.png" alt="phone icon" class="icon contact-icon" />
+        <p>+855 10 364 436</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#languages">Languages</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2026 MuongKimHeng. All Rights Reserved.</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
